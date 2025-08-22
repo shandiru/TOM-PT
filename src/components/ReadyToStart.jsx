@@ -15,36 +15,21 @@ function ReadyToStart({ imageSrc = "", ctaHref = "/appointment/", onCtaClick }) 
                 <div className="relative">
                     <div className="relative overflow-hidden rounded-3xl">
                         {/* Lime panel */}
-                        <div className="absolute inset-0 bg-lime-400" aria-hidden="true" />
-
+                        <div className="absolute inset-0" aria-hidden="true" />
+                
                         {/* Dots pattern (top-right) */}
                         <DotsTopRight />
 
                         {/* BIG watermark text */}
-                        <div
-                            aria-hidden="true"
-                            className="relative z-10 p-8 sm:p-10 lg:p-12"
-                        >
-                            <div className="text-[16vw] leading-none font-extrabold tracking-tight text-white/30 mix-blend-overlay md:text-[9rem]">
-                                JUST
-                            </div>
-                            <div className="text-[16vw] -mt-5 leading-none font-extrabold tracking-tight text-white/30 mix-blend-overlay md:text-[9rem]">
-                                DO IT
-                            </div>
-                        </div>
-
-                        {/* Optional foreground image (adds nice hero feel if you pass imageSrc) */}
-                        {imageSrc ? (
+                        <div className="relative z-10 p-8 sm:p-10 lg:p-12 bg-cover bg-center" style={{ backgroundImage: `url('/background.jpg')` }}>
                             <img
-                                src={imageSrc}
+                                src="/jump.png"
                                 alt=""
-                                className="relative z-20 mx-auto -mb-8 block w-[86%] max-w-[560px] object-contain md:-mb-14"
+                                className="relative z-50 mx-auto -mb-8 block w-[86%] h-120 max-w-[560px] object-contain md:-mb-14"
                                 loading="lazy"
                             />
-                        ) : (
-                            // Subtle placeholder aspect to keep height balanced when no image
-                            <div className="relative z-0 pb-[40%]" />
-                        )}
+                        </div>
+
                     </div>
                 </div>
 
