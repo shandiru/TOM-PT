@@ -21,8 +21,8 @@ export default function HeroSection() {
       "
         >
             {/* soft blobs */}
-            <div className="pointer-events-none absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-lime-200/40 blur-3xl" />
-            <div className="pointer-events-none absolute top-10 right-0 h-[380px] w-[380px] rounded-full bg-green-100/60 blur-3xl" />
+            <div className="pointer-events-none absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-red-200/40 blur-3xl" />
+            <div className="pointer-events-none absolute top-10 right-0 h-[380px] w-[380px] rounded-full bg-red-100/60 blur-3xl" />
             {/* dotted texture */}
             <div
                 className="pointer-events-none absolute right-6 bottom-6 w-56 h-56 opacity-60"
@@ -51,7 +51,7 @@ export default function HeroSection() {
                         </p>
 
                         <button
-                            className="mt-6 inline-flex items-center rounded-md bg-lime-400 px-5 py-3 text-sm font-bold uppercase tracking-wide text-neutral-900 shadow hover:bg-lime-300 focus:outline-none focus:ring-2 focus:ring-lime-500"
+                            className="mt-6 inline-flex items-center rounded-md bg-red-400 px-5 py-3 text-sm font-bold uppercase tracking-wide text-neutral-900 shadow hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-500"
                             type="button"
                         >
                             Join Now
@@ -64,7 +64,7 @@ export default function HeroSection() {
                             <img
                                 src="/hero.png"
                                 alt="Athlete holding bottle"
-                                className="relative z-10 w-[min(90vw,640px)] sm:w-[min(80vw,400px)] max-w-none object-contain drop-shadow-2xl -ml-35"
+                                className="relative z-10 -mt-20 w-[min(90vw,640px)] sm:w-[min(80vw,400px)] max-w-none object-contain drop-shadow-2xl -ml-35"
                                 draggable="false"
                             />
                             {/* Light dots behind image */}
@@ -80,7 +80,7 @@ export default function HeroSection() {
                     </div>
 
                     {/* RIGHT CARD */}
-                    <div className="hidden lg:flex lg:col-span-3 mt-100 bg-lime-500">
+                    <div className="hidden lg:flex lg:col-span-3 mt-100 bg-red-500">
                         <div className="rounded-2xl p-4 md:p-5 ">
                             <div className="relative overflow-hidden rounded-lg w-60">
                                 {/* thumbnail — replace if needed */}
@@ -100,7 +100,7 @@ export default function HeroSection() {
                                 >
                                     <span
                                         className="
-                                                    grid h-14 w-14 place-items-center rounded-full bg-white/90 hover:bg-lime-400 backdrop-blur
+                                                    grid h-14 w-14 place-items-center rounded-full bg-white/90 hover:bg-red-400 backdrop-blur
                                                     ring-1 ring-black/10 shadow
                                                     group-hover:scale-105 transition
                                                     "
@@ -183,7 +183,7 @@ function Stat({ number, labelTop, labelBottom }) {
   return (
     <div className="flex flex-col items-center justify-center px-4 py-5 sm:py-6">
       {/* Number on top */}
-      <div className="text-4xl sm:text-6xl font-bold text-lime-500 leading-none">
+      <div className="text-4xl sm:text-6xl font-bold text-red-500 leading-none">
         {number}
       </div>
 

@@ -15,27 +15,26 @@ const MyProgram = () => {
         <div className="space-y-6">
           <div className="text-left">
             <h1 className="text-4xl font-bold text-black mb-2">
-              MY PROGRAM<span className="text-lime-500">...</span>
+              MY PROGRAM<span className="text-red-500">...</span>
             </h1>
             <p className="max-w-md text-gray-600 mb-4">
-              Nulla aliquet enim tortor at auctor urna. Neque sodales ut etiam sit amet nisl purus.
-              Auctor neque vitae tempus quam. At urna condimentum mattis pellentesque.
+             This isn’t your average “do 20 push-ups and call it a day” plan. My program mixes cardio, strength, and core work to keep things challenging, fun, and seriously effective. Here’s the lowdown.
             </p>
-            <button className="bg-lime-500 text-white font-semibold px-6 py-2 rounded hover:bg-lime-600">
+            <button className="bg-red-500 text-white font-semibold px-6 py-2 rounded hover:bg-red-600">
               JOIN NOW
             </button>
           </div>
 
           {/* Left Cards */}
           <Card
-            icon={<FaHeartbeat className="h-10 w-10 text-lime-500" />}
+            icon={<FaHeartbeat className="h-10 w-10 text-red-500" />}
             title="Cardio"
-            desc="Pretium quam vulputate dignissim suspen disse. Nisi scelerisque eu ultrices."
+            desc="No soul-crushing treadmills. We’ll use smart, high-energy moves to torch calories and boost endurance without the boredom."
           />
           <Card
-            icon={<FaDumbbell className="h-10 w-10 text-lime-500" />}
+            icon={<FaDumbbell className="h-10 w-10 text-red-500" />}
             title="Abdominal abs"
-            desc="Pretium quam vulputate dignissim suspen disse. Nisi scelerisque eu ultrices."
+            desc="Say goodbye to crunches-only. We’ll sculpt a strong, functional core that looks good and actually works in real life."
           />
         </div>
 
@@ -47,19 +46,19 @@ const MyProgram = () => {
         {/* Right Side */}
         <div className="space-y-6">
           <Card
-            icon={<FaUserAlt className="h-10 w-10 text-lime-500" />}
+            icon={<FaUserAlt className="h-10 w-10 text-red-500" />}
             title="Shoulders"
-            desc="Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Condimentum vitae sapien."
+            desc="Because boulder shoulders don’t build themselves. Expect presses, lifts, and movements that shape and strengthen your upper body."
           />
           <Card
-            icon={<FaRegHandRock className="h-10 w-10 text-lime-500" />}
+            icon={<FaRegHandRock className="h-10 w-10 text-red-500" />}
             title="Hands"
-            desc="Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Purus in massa tempor."
+            desc="Grip strength matters more than you think — we’ll train your arms and hands so you’re not just strong, but unshakable."
           />
           <Card
-            icon={<FaClock className="h-10 w-10 text-lime-500" />}
+            icon={<FaClock className="h-10 w-10 text-red-500" />}
             title="Time"
-            desc="Pretium quam vulputate dignissim suspen disse. Nisi scelerisque eu ultrices."
+            desc="No endless hours in the gym. Efficient, focused workouts designed to get max results in minimal time."
           />
         </div>
       </div>

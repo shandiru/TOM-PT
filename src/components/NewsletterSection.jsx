@@ -48,7 +48,7 @@ export default function NewsletterSection() {
 
                     <button
                         type="submit"
-                        className="h-16 rounded-md bg-lime-400 px-8 text-base font-extrabold uppercase tracking-wide text-black transition hover:bg-lime-300 active:scale-[0.99]"
+                        className="h-16 rounded-md bg-red-400 px-8 text-base font-extrabold uppercase tracking-wide text-black transition hover:bg-red-300 active:scale-[0.99]"
                         aria-label="Subscribe"
                     >
                         Subscribe
@@ -60,7 +60,7 @@ export default function NewsletterSection() {
                         type="checkbox"
                         checked={agree}
                         onChange={(e) => setAgree(e.target.checked)}
-                        className="mt-1 size-4 rounded border-white/20 bg-white/5 text-lime-400 accent-lime-400"
+                        className="mt-1 size-4 rounded border-white/20 bg-white/5 text-red-400 accent-red-400"
                         aria-label="Agree to terms"
                     />
                     <span>

@@ -14,7 +14,7 @@ function ReadyToStart({ imageSrc = "", ctaHref = "/appointment/", onCtaClick }) 
                 {/* Left: Decorative panel (no model image by default) */}
                 <div className="relative">
                     <div className="relative overflow-hidden rounded-3xl">
-                        {/* Lime panel */}
+                        {/* red panel */}
                         <div className="absolute inset-0" aria-hidden="true" />
                 
                         {/* Dots pattern (top-right) */}
@@ -44,22 +44,26 @@ function ReadyToStart({ imageSrc = "", ctaHref = "/appointment/", onCtaClick }) 
                     <UnderlineDots className="mb-8" />
 
                     <p className="mb-6 max-w-xl text-lg text-gray-700">
-                        Duis at consectetur lorem donec massa sapien faucibus et molestie.
-                        Ut etiam sit amet nisl purus.
+                        Your fitness journey doesn’t have to be complicated or boring. With the right plan, the right support, and a little consistency — you’ll be surprised how quickly things change.
                     </p>
 
                     <h6 className="mb-4 text-xl font-semibold text-gray-900">
-                        Never be bored by your fitness program again!
+                        ✨ Never be bored by your workouts again.
                     </h6>
 
-                    <p className="mb-10 max-w-xl text-lg text-gray-700">
-                        Membership is only $29.99/mo, that’s less than $1 a day!
+                    <p className="mb-5 max-w-xl text-lg text-gray-700">
+                        ✨ Build strength, lose fat, and feel your best.
                     </p>
-
+                     <p className="mb-5 max-w-xl text-lg text-gray-700">
+                        ✨ Support every step of the way.
+                    </p>
+                     <p className="mb-10 max-w-xl text-lg text-gray-700">
+                        👉 Call today and let’s talk about how we can kickstart your transformation!
+                    </p>
                     <a
                         href={ctaHref}
                         onClick={onCtaClick}
-                        className="inline-flex items-center justify-center rounded-xl bg-lime-400 px-8 py-4 text-base font-extrabold uppercase tracking-wide text-black shadow-sm transition hover:brightness-110 active:scale-[0.99]"
+                        className="inline-flex items-center justify-center rounded-xl bg-red-400 px-8 py-4 text-base font-extrabold uppercase tracking-wide text-black shadow-sm transition hover:brightness-110 active:scale-[0.99]"
                     >
                         Join Now
                     </a>
@@ -76,7 +80,7 @@ export default memo(ReadyToStart);
 function UnderlineDots({ className = "" }) {
     return (
         <svg
-            className={`h-3 w-44 text-lime-400 ${className}`}
+            className={`h-3 w-44 text-red-400 ${className}`}
             viewBox="0 0 176 12"
             fill="currentColor"
             aria-hidden="true"
@@ -91,7 +95,7 @@ function UnderlineDots({ className = "" }) {
 function DotsTopRight() {
     return (
         <svg
-            className="pointer-events-none absolute -top-6 right-4 z-0 h-28 w-28 text-lime-200 opacity-80 md:-top-10 md:right-8 md:h-36 md:w-36"
+            className="pointer-events-none absolute -top-6 right-4 z-0 h-28 w-28 text-red-200 opacity-80 md:-top-10 md:right-8 md:h-36 md:w-36"
             viewBox="0 0 120 120"
             fill="currentColor"
             aria-hidden="true"

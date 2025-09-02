@@ -24,7 +24,7 @@ const BMI = () => {
     return (
         <div className="min-h-screen bg-black text-black flex justify-center items-center py-6 px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col sm:flex-row w-full bg-white max-w-5xl p-6 rounded-xl shadow-xl">
-                <div className="flex-1 flex items-center justify-center sm:justify-start bg-lime-500">
+                <div className="flex-1 flex items-center justify-center sm:justify-start bg-red-500">
                     <img
                         src="/weight.png" // Add your image path here
                         alt="Person with BMI scale"
@@ -114,7 +114,7 @@ const BMI = () => {
                     </div>
                     <button
                         onClick={calculateBMI}
-                        className="w-full p-3 mt-4 bg-green-600 hover:bg-green-700 text-white rounded-lg font-semibold"
+                        className="w-full p-3 mt-4 bg-red-600 hover:bg-red-700 text-white rounded-lg font-semibold"
                     >
                         Calculate BMI
                     </button>

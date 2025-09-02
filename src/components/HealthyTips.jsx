@@ -37,7 +37,7 @@ export default function HealthyTips({
 
                     <a
                         href={ctaHref}
-                        className="inline-flex w-fit items-center justify-center rounded-xl bg-lime-400 px-6 py-3 text-sm font-extrabold uppercase tracking-wide text-black transition hover:brightness-110 active:scale-[0.99]"
+                        className="inline-flex w-fit items-center justify-center rounded-xl bg-red-400 px-6 py-3 text-sm font-extrabold uppercase tracking-wide text-black transition hover:brightness-110 active:scale-[0.99]"
                     >
                         {ctaText}
                     </a>
@@ -88,7 +88,7 @@ function PostCard({ post }) {
 
                 {/* Title */}
                 <h3 className="text-xl font-semibold leading-snug text-gray-900">
-                    <a href={href} className="transition hover:text-lime-600">
+                    <a href={href} className="transition hover:text-red-600">
                         {title}
                     </a>
                 </h3>
@@ -100,7 +100,7 @@ function PostCard({ post }) {
                 <div className="flex items-center justify-between pt-2">
                     <a
                         href={href}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 transition hover:text-lime-600"
+                        className="inline-flex items-center gap-2 text-sm font-semibold text-gray-900 transition hover:text-red-600"
                     >
                         Read More
                         <ArrowRightIcon className="h-4 w-4" />

@@ -6,13 +6,13 @@ function Navbar() {
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <img src="path-to-logo.png" alt="Logo" className="h-8" />
-          <span className="font-bold text-green-500">SAMANTHA</span>
+          <span className="font-bold text-red-500">SAMANTHA</span>
         </div>
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="hover:text-green-500">Home</a>
-          <a href="#" className="hover:text-green-500">About</a>
+          <a href="#" className="hover:text-red-500">Home</a>
+          <a href="#" className="hover:text-red-500">About</a>
           <div className="relative">
-            <button className="hover:text-green-500">
+            <button className="hover:text-red-500">
               Pages
             </button>
             <div className="absolute left-0 hidden bg-white text-black mt-2 rounded shadow-lg md:w-40">
@@ -21,7 +21,7 @@ function Navbar() {
             </div>
           </div>
           <div className="relative">
-            <button className="hover:text-green-500">
+            <button className="hover:text-red-500">
               Programs
             </button>
             <div className="absolute left-0 hidden bg-white text-black mt-2 rounded shadow-lg md:w-40">
@@ -29,10 +29,10 @@ function Navbar() {
               <a href="#" className="block px-4 py-2">Program 2</a>
             </div>
           </div>
-          <a href="#" className="hover:text-green-500">Blog</a>
-          <a href="#" className="hover:text-green-500">Contact</a>
+          <a href="#" className="hover:text-red-500">Blog</a>
+          <a href="#" className="hover:text-red-500">Contact</a>
         </div>
-        <button className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">
+        <button className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600">
           Buy Now
         </button>
         <div className="md:hidden">

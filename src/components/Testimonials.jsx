@@ -5,8 +5,8 @@ export default function RealResultsSection() {
   const resultsData = [
     {
       id: 'slide-1',
-      before: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-3.jpg',
-      after: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-3-a.jpg',
+      before: '/1.jpg',
+      after: '/2.jpg',
       quote:
         'Suspendisse in est ante in nibh mauris cursus mattis molestie. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Feugiat in fermentum posuere urna nec tincidunt praesent semper.',
       avatar: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-na-2-140x140.png',
@@ -15,8 +15,8 @@ export default function RealResultsSection() {
     },
     {
       id: 'slide-2',
-      before: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-2.jpg',
-      after: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-2-a.jpg',
+      before: '/3.1.jpeg',
+      after: '/3.2.jpeg',
       quote:
         'Suspendisse in est ante in nibh mauris cursus mattis molestie. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Feugiat in fermentum posuere urna nec tincidunt praesent semper.',
       avatar: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-na-3-140x140.png',
@@ -25,8 +25,8 @@ export default function RealResultsSection() {
     },
     {
       id: 'slide-3',
-      before: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-1.jpg',
-      after: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-1-a.jpg',
+      before: '/4.1.jpeg',
+      after: '/4.2.jpeg',
       quote:
         'Suspendisse in est ante in nibh mauris cursus mattis molestie. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Feugiat in fermentum posuere urna nec tincidunt praesent semper.',
       avatar: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-na-1-140x140.png',
@@ -106,11 +106,10 @@ export default function RealResultsSection() {
       {/* Heading */}
       <div className="mx-auto max-w-3xl text-center">
         <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-          Real people. Real Results
+          Real People. Real Results
         </h3>
         <p className="mt-3 text-gray-600">
-          Duis at consectetur lorem donec massa sapien faucibus et molestie. Ut etiam sit amet
-          nisl purus. Massa tempor nec feugiat nisl pretium.
+          No gimmicks. No quick fixes. Just everyday people putting in the work, seeing real progress, and feeling stronger inside and out. Your results won’t just show in the mirror — they’ll show in your energy, confidence, and the way you show up every day.
         </p>
       </div>
 
@@ -162,10 +161,10 @@ export default function RealResultsSection() {
 
                   {/* Divider / handle */}
                   <div
-                    className="absolute top-0 h-full w-0.5 -translate-x-1/2 bg-lime-400/70"
+                    className="absolute top-0 h-full w-0.5 -translate-x-1/2 bg-red-400/70"
                     style={{ left: `${posMap[item.id]}%` }}
                   >
-                    <div className="absolute left-1/2 top-1/2 grid h-8 w-8 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-lime-400">
+                    <div className="absolute left-1/2 top-1/2 grid h-8 w-8 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-red-400">
                       <div className="relative flex items-center">
                         <i
                           className="mr-1 inline-block"

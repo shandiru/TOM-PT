@@ -8,11 +8,11 @@ export default function SiteFooter() {
                 <div className="grid gap-12 md:grid-cols-3">
                     {/* Brand + blurb + socials */}
                     <div>
-                        {/* Logo text with lime underline */}
+                        {/* Logo text with red underline */}
                         <a href="/" className="inline-block">
                             <span className="relative inline-block text-3xl font-extrabold tracking-[0.2em]">
                                 <span className="relative z-[1]">SAMANTHA</span>
-                                <span className="absolute left-0 -bottom-1 h-2 w-24 bg-lime-400"></span>
+                                <span className="absolute left-0 -bottom-1 h-2 w-24 bg-red-400"></span>
                             </span>
                         </a>
 
@@ -29,7 +29,7 @@ export default function SiteFooter() {
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="Facebook"
-                                    className="grid h-10 w-10 place-items-center rounded-full border border-white/80 hover:border-lime-400 transition"
+                                    className="grid h-10 w-10 place-items-center rounded-full border border-white/80 hover:border-red-400 transition"
                                 >
                                     <svg viewBox="0 0 320 512" width="16" height="16" fill="currentColor">
                                         <path
@@ -47,7 +47,7 @@ export default function SiteFooter() {
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="X (Twitter)"
-                                    className="grid h-10 w-10 place-items-center rounded-full border border-white/80 hover:border-lime-400 transition"
+                                    className="grid h-10 w-10 place-items-center rounded-full border border-white/80 hover:border-red-400 transition"
                                 >
                                     <svg viewBox="0 0 512 512" width="18" height="18">
                                         <path
@@ -65,7 +65,7 @@ export default function SiteFooter() {
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="Instagram"
-                                    className="grid h-10 w-10 place-items-center rounded-full border border-white/80 hover:border-lime-400 transition"
+                                    className="grid h-10 w-10 place-items-center rounded-full border border-white/80 hover:border-red-400 transition"
                                 >
                                     <svg viewBox="0 0 448 512" width="18" height="18">
                                         <path
@@ -85,9 +85,9 @@ export default function SiteFooter() {
                                 Menu
                             </div>
                             <ul className="space-y-5 text-white/90">
-                                <li><a href="/" className="hover:text-lime-400">Home</a></li>
-                                <li><a href="/blog" className="hover:text-lime-400">Blog</a></li>
-                                <li><a href="/programs" className="hover:text-lime-400">Programs</a></li>
+                                <li><a href="/" className="hover:text-red-400">Home</a></li>
+                                <li><a href="/blog" className="hover:text-red-400">Blog</a></li>
+                                <li><a href="/programs" className="hover:text-red-400">Programs</a></li>
                             </ul>
                         </div>
                         <div>
@@ -96,9 +96,9 @@ export default function SiteFooter() {
                                 Menu
                             </div>
                             <ul className="space-y-5 text-white/90">
-                                <li><a href="/about" className="hover:text-lime-400">About</a></li>
-                                <li><a href="/contact" className="hover:text-lime-400">Contact</a></li>
-                                <li><a href="/schedule" className="hover:text-lime-400">Schedule</a></li>
+                                <li><a href="/about" className="hover:text-red-400">About</a></li>
+                                <li><a href="/contact" className="hover:text-red-400">Contact</a></li>
+                                <li><a href="/schedule" className="hover:text-red-400">Schedule</a></li>
                             </ul>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ export default function SiteFooter() {
 
                         <ul className="space-y-6">
                             <li className="flex items-start gap-4">
-                                <span className="grid h-10 w-10 place-items-center rounded-sm bg-lime-400 shrink-0">
+                                <span className="grid h-10 w-10 place-items-center rounded-sm bg-red-400 shrink-0">
                                     {/* map-marker */}
                                     <svg viewBox="0 0 384 512" width="18" height="18">
                                         <path
@@ -126,7 +126,7 @@ export default function SiteFooter() {
                             </li>
 
                             <li className="flex items-center gap-4">
-                                <span className="grid h-10 w-10 place-items-center rounded-sm bg-lime-400 shrink-0">
+                                <span className="grid h-10 w-10 place-items-center rounded-sm bg-red-400 shrink-0">
                                     {/* phone */}
                                     <svg viewBox="0 0 512 512" width="18" height="18">
                                         <path
@@ -135,13 +135,13 @@ export default function SiteFooter() {
                                         />
                                     </svg>
                                 </span>
-                                <a href="tel:+14952311782" className="text-white/90 hover:text-lime-400">
+                                <a href="tel:+14952311782" className="text-white/90 hover:text-red-400">
                                     +1 (495) 23117 82
                                 </a>
                             </li>
 
                             <li className="flex items-center gap-4">
-                                <span className="grid h-10 w-10 place-items-center rounded-sm bg-lime-400 shrink-0">
+                                <span className="grid h-10 w-10 place-items-center rounded-sm bg-red-400 shrink-0">
                                     {/* envelope */}
                                     <svg viewBox="0 0 512 512" width="18" height="18">
                                         <path
@@ -152,7 +152,7 @@ export default function SiteFooter() {
                                 </span>
                                 <a
                                     href="mailto:hana_evans@gmail.com"
-                                    className="text-white/90 hover:text-lime-400"
+                                    className="text-white/90 hover:text-red-400"
                                 >
                                     hana_evans@gmail.com
                                 </a>
@@ -169,17 +169,17 @@ export default function SiteFooter() {
                     <p>© 2023 Samantha. All rights reserved</p>
                     <ul className="flex flex-wrap items-center gap-8">
                         <li>
-                            <a href="/privacy-policy/" className="hover:text-lime-400">
+                            <a href="/privacy-policy/" className="hover:text-red-400">
                                 Privacy Policy
                             </a>
                         </li>
                         <li>
-                            <a href="/privacy-policy/#terms" className="hover:text-lime-400">
+                            <a href="/privacy-policy/#terms" className="hover:text-red-400">
                                 Term of Service
                             </a>
                         </li>
                         <li>
-                            <a href="/privacy-policy/#legal-info" className="hover:text-lime-400">
+                            <a href="/privacy-policy/#legal-info" className="hover:text-red-400">
                                 Legal Info
                             </a>
                         </li>
