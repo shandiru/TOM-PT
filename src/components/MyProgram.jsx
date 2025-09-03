@@ -40,7 +40,7 @@ const MyProgram = () => {
 
         {/* Center Image */}
         <div className="flex justify-center">
-          <img src="/center.png" alt="Fitness" className="max-h-[600px] w-auto" />
+          <img src="/center.png" alt="Fitness" className="lg:mt-60 md:-ml-36" />
         </div>
 
         {/* Right Side */}

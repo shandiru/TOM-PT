@@ -17,7 +17,7 @@ export default function HeroSection() {
         relative overflow-hidden
         min-h-[720px] md:min-h-[820px] xl:min-h-[880px]
         flex items-center py-25
-        bg-gradient-to-br from-[#f0ffe9] via-white to-[#f2ffe6]
+        bg-gradient-to-br from-[#f08868] via-white to-[#ec5b48]
       "
         >
             {/* soft blobs */}
@@ -64,7 +64,7 @@ export default function HeroSection() {
                             <img
                                 src="/hero.png"
                                 alt="Athlete holding bottle"
-                                className="relative z-10 -mt-20 w-[min(90vw,640px)] sm:w-[min(80vw,400px)] max-w-none object-contain drop-shadow-2xl -ml-35"
+                                className="relative z-10 md:-mt-45 h-100 w-[min(90vw,640px)] sm:w-[min(80vw,400px)] max-w-none object-contain drop-shadow-2xl -ml-35"
                                 draggable="false"
                             />
                             {/* Light dots behind image */}

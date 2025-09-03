@@ -15,8 +15,8 @@ export default function RealResultsSection() {
     },
     {
       id: 'slide-2',
-      before: '/3.1.jpeg',
-      after: '/3.2.jpeg',
+      before: '/3.2.jpeg',
+      after: '/3.1.jpeg',
       quote:
         'Suspendisse in est ante in nibh mauris cursus mattis molestie. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Feugiat in fermentum posuere urna nec tincidunt praesent semper.',
       avatar: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-na-3-140x140.png',
@@ -25,8 +25,8 @@ export default function RealResultsSection() {
     },
     {
       id: 'slide-3',
-      before: '/4.1.jpeg',
-      after: '/4.2.jpeg',
+      before: '/4.2.jpeg',
+      after: '/4.1.jpeg',
       quote:
         'Suspendisse in est ante in nibh mauris cursus mattis molestie. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Feugiat in fermentum posuere urna nec tincidunt praesent semper.',
       avatar: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-na-1-140x140.png',
@@ -35,8 +35,8 @@ export default function RealResultsSection() {
     },
     {
       id: 'slide-4',
-      before: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-1.jpg',
-      after: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-1-a.jpg',
+      before: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-1-a.jpg',
+      after: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-1.jpg',
       quote:
         'Suspendisse in est ante in nibh mauris cursus mattis molestie. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Feugiat in fermentum posuere urna nec tincidunt praesent semper.',
       avatar: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-na-1-140x140.png',
