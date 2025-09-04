@@ -9,7 +9,7 @@ import {
 
 const MyProgram = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-green-100 to-blue-100 flex flex-col items-center justify-center px-4 py-8">
+    <div className="min-h-screen bg-red-100 flex flex-col items-center justify-center px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full max-w-7xl items-start">
         {/* Left Side */}
         <div className="space-y-6">
