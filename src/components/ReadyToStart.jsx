@@ -52,17 +52,17 @@ function ReadyToStart({ imageSrc = "", ctaHref = "/appointment/", onCtaClick }) 
           </p>
 
           <h6 className="mb-4 text-xl font-semibold text-gray-900">
-            ✨ Never be bored by your workouts again.
+            Never be bored by your workouts again.
           </h6>
 
           <p className="mb-5 max-w-xl text-lg text-gray-700">
-            ✨ Build strength, lose fat, and feel your best.
+            Build strength, lose fat, and feel your best.
           </p>
           <p className="mb-5 max-w-xl text-lg text-gray-700">
-            ✨ Support every step of the way.
+            Support every step of the way.
           </p>
           <p className="mb-10 max-w-xl text-lg text-gray-700">
-            👉 Call today and let’s talk about how we can kickstart your
+            Call today and let’s talk about how we can kickstart your
             transformation!
           </p>
           <a

@@ -8,7 +8,7 @@ export default function RealResultsSection() {
       before: '/1.jpg',
       after: '/2.jpg',
       quote:
-        'Suspendisse in est ante in nibh mauris cursus mattis molestie. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Feugiat in fermentum posuere urna nec tincidunt praesent semper.',
+        'After a pec major tear led to weight gain, my client focused on slow, steady lifestyle changes—aiming for 1lb a week. Over 8 months, he lost 15kg, proving that sustainable fat loss and consistency matter more than quick fixes.',
       avatar: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-na-2-140x140.png',
       name: 'Annie Parson',
       tag: 'Weeks Workouts',
@@ -18,7 +18,7 @@ export default function RealResultsSection() {
       before: '/3.2.jpeg',
       after: '/3.1.jpeg',
       quote:
-        'Suspendisse in est ante in nibh mauris cursus mattis molestie. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Feugiat in fermentum posuere urna nec tincidunt praesent semper.',
+        'Client’s goal was to build muscle, feel bigger, and get stronger in the gym. We focused on a lean gain approach—prioritizing strength training, progressive overload, and controlled nutrition—so he could add quality muscle without unnecessary fat.',
       avatar: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-na-3-140x140.png',
       name: 'Annie Parson',
       tag: 'Weeks Workouts',
@@ -28,17 +28,7 @@ export default function RealResultsSection() {
       before: '/4.2.jpeg',
       after: '/4.1.jpeg',
       quote:
-        'Suspendisse in est ante in nibh mauris cursus mattis molestie. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Feugiat in fermentum posuere urna nec tincidunt praesent semper.',
-      avatar: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-na-1-140x140.png',
-      name: 'Annie Parson',
-      tag: 'Weeks Workouts',
-    },
-    {
-      id: 'slide-4',
-      before: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-1-a.jpg',
-      after: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-1.jpg',
-      quote:
-        'Suspendisse in est ante in nibh mauris cursus mattis molestie. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Feugiat in fermentum posuere urna nec tincidunt praesent semper.',
+        'Client wanted to add muscle while also feeling mentally sharp and physically younger. We focused on balanced training, smart nutrition, and lifestyle habits to boost fitness, energy, and motivation—helping him look stronger, feel healthier, and regain confidence inside and outside the gym.',
       avatar: 'https://samantha.bslthemes.com/wp-content/uploads/2023/02/slider-na-1-140x140.png',
       name: 'Annie Parson',
       tag: 'Weeks Workouts',
@@ -128,7 +118,7 @@ export default function RealResultsSection() {
               key={item.id}
               className="snap-center shrink-0 basis-[85%] sm:basis-[60%] md:basis-[48%] lg:basis-[460px]"
             >
-              <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm">
+              <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm h-190">
                 {/* Before/After slider */}
                 <div
                   ref={setContainerRef(item.id)}
@@ -197,7 +187,7 @@ export default function RealResultsSection() {
                 </blockquote>
 
                 {/* Author */}
-                <div className="mt-4 flex items-center gap-3">
+                {/* <div className="mt-4 flex items-center gap-3">
                   <img
                     src={item.avatar}
                     alt={item.name}
@@ -207,7 +197,7 @@ export default function RealResultsSection() {
                     <h5 className="text-sm font-semibold text-gray-900">{item.name}</h5>
                     <p className="text-xs text-gray-500">{item.tag}</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
@@ -217,7 +207,7 @@ export default function RealResultsSection() {
         <button
           type="button"
           onClick={() => scrollByCard(-1)}
-          className="absolute left-2 top-1/2 z-10 -translate-y-1/2 inline-flex items-center justify-center rounded-full border bg-white p-2 shadow hover:bg-gray-50"
+          className="absolute -left-10 top-1/2 z-10 -translate-y-1/2 inline-flex items-center justify-center rounded-full border bg-white p-2 shadow hover:bg-gray-50"
           aria-label="Previous"
         >
           ‹
@@ -225,7 +215,7 @@ export default function RealResultsSection() {
         <button
           type="button"
           onClick={() => scrollByCard(1)}
-          className="absolute right-2 top-1/2 z-10 -translate-y-1/2 inline-flex items-center justify-center rounded-full border bg-white p-2 shadow hover:bg-gray-50"
+          className="absolute right-8 top-1/2 z-10 -translate-y-1/2 inline-flex items-center justify-center rounded-full border bg-white p-2 shadow hover:bg-gray-50"
           aria-label="Next"
         >
           ›
