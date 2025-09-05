@@ -17,12 +17,12 @@ export default function HeroSection() {
         relative overflow-hidden
         min-h-[720px] md:min-h-[820px] xl:min-h-[880px]
         flex items-center py-25
-        bg-gradient-to-br from-[#f08868] via-white to-[#ec5b48]
+        bg-white
       "
         >
             {/* soft blobs */}
-            <div className="pointer-events-none absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full bg-red-200/40 blur-3xl" />
-            <div className="pointer-events-none absolute top-10 right-0 h-[380px] w-[380px] rounded-full bg-red-100/60 blur-3xl" />
+            <div className="pointer-events-none absolute -top-40 -left-40 h-[520px] w-[520px] rounded-full blur-3xl" />
+            <div className="pointer-events-none absolute top-10 right-0 h-[380px] w-[380px] rounded-full blur-3xl" />
             {/* dotted texture */}
             <div
                 className="pointer-events-none absolute right-6 bottom-6 w-56 h-56 opacity-60"
@@ -51,7 +51,7 @@ export default function HeroSection() {
                         </p>
 
                         <button
-                            className="mt-6 inline-flex items-center rounded-md bg-red-400 px-5 py-3 text-sm font-bold uppercase tracking-wide text-neutral-900 shadow hover:bg-red-300 focus:outline-none focus:ring-2 focus:ring-red-500"
+                            className="mt-6 inline-flex items-center rounded-md bg-[#67c2d5] px-5 py-3 hover:text-white text-sm font-bold uppercase tracking-wide text-neutral-900 shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-[#67c2d5]"
                             type="button"
                         >
                             Join Now
@@ -80,9 +80,9 @@ export default function HeroSection() {
                     </div>
 
                     {/* RIGHT CARD */}
-                    <div className="hidden lg:flex lg:col-span-3 mt-100 bg-red-500">
+                    <div className="hidden lg:flex lg:col-span-3 mt-100 bg-[#67c2d5]">
                         <div className="rounded-2xl p-4 md:p-5 ">
-                            <div className="relative overflow-hidden rounded-lg w-60">
+                            <div className="relative overflow-hidden rounded-lg w-60 -ml-1.5">
                                 {/* thumbnail — replace if needed */}
                                 <img
                                     src="video.jpg"
@@ -100,7 +100,7 @@ export default function HeroSection() {
                                 >
                                     <span
                                         className="
-                                                    grid h-14 w-14 place-items-center rounded-full bg-white/90 hover:bg-red-400 backdrop-blur
+                                                    grid h-14 w-14 place-items-center rounded-full bg-white/90 hover:bg-[#67c2d5] backdrop-blur
                                                     ring-1 ring-black/10 shadow
                                                     group-hover:scale-105 transition
                                                     "
@@ -131,7 +131,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* QUOTE BUBBLE (top-right of hero) */}
-                <div className="hidden lg:block absolute left-200 top-20 max-w-lg italic rounded-2xl bg-white/70 p-5 text-lg text-neutral-700 shadow backdrop-blur">
+                <div className="hidden lg:block absolute  left-200 top-20 max-w-lg italic rounded-2xl bg-[#67c2d5] p-5 text-lg text-neutral-700 shadow backdrop-blur">
                     <p className="leading-6">
                         “You’re going to have to let it hurt. Let it suck. The harder you
                         work, the better you will look your appearance isn’t parallel to how
@@ -149,7 +149,7 @@ export default function HeroSection() {
             shadow-[0_20px_60px_-20px_rgba(0,0,0,0.25)] z-10 ml-10
           "
                 >
-                    <div className="pointer-events-auto grid grid-cols-3 divide-x divide-neutral-400 p-5">
+                    <div className="pointer-events-auto grid grid-cols-3 divide-x divide-neutral-400 p-5 bg-[#67c2d5] rounded-lg">
                         <Stat number="3" labelTop="CERTIFICATE" labelBottom="TRAINER" />
                         <Stat number="8" labelTop="YEARS" labelBottom="EXPERIENCE" />
                         <Stat number="47" labelTop="LOYAL" labelBottom="CLIENT" />
@@ -180,20 +180,20 @@ export default function HeroSection() {
 /* —————————————————— Helpers —————————————————— */
 
 function Stat({ number, labelTop, labelBottom }) {
-  return (
-    <div className="flex flex-col items-center justify-center px-4 py-5 sm:py-6">
-      {/* Number on top */}
-      <div className="text-4xl sm:text-6xl font-bold text-red-500 leading-none">
-        {number}
-      </div>
+    return (
+        <div className="flex flex-col items-center justify-center px-4 py-5 sm:py-6">
+            {/* Number on top */}
+            <div className="text-4xl sm:text-6xl font-bold text-[#67c2d5] leading-none text-black">
+                {number}
+            </div>
 
-      {/* Labels stacked below */}
-      <div className="mt-2 text-[10px] sm:text-[14px] font-semibold tracking-wide text-neutral-600 text-center">
-        <div>{labelTop}</div>
-        <div>{labelBottom}</div>
-      </div>
-    </div>
-  );
+            {/* Labels stacked below */}
+            <div className="mt-2 text-[10px] sm:text-[14px] font-semibold tracking-wide text-neutral-600 text-center">
+                <div>{labelTop}</div>
+                <div>{labelBottom}</div>
+            </div>
+        </div>
+    );
 }
 
 function Modal({ children, onClose }) {

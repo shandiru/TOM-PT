@@ -13,17 +13,15 @@ function ReadyToStart({ imageSrc = "", ctaHref = "/appointment/", onCtaClick }) 
         {/* Left: Decorative panel */}
         <div className="relative">
           <div className="relative overflow-hidden rounded-3xl w-full h-full">
-            {/* red panel */}
-            <div className="absolute inset-0" aria-hidden="true" />
+            {/* Solid colored panel instead of background image */}
+            <div
+              className="absolute inset-0 w-full h-full"
+              style={{ backgroundColor: "#67c2d5" }}
+              aria-hidden="true"
+            />
 
             {/* Dots pattern (top-right) */}
             <DotsTopRight />
-
-            {/* BIG watermark text with responsive background */}
-            <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat w-full h-auto"
-              style={{ backgroundImage: `url('/background.jpg')` }}
-            ></div>
 
             {/* Foreground image (fully responsive) */}
             <img
@@ -68,7 +66,7 @@ function ReadyToStart({ imageSrc = "", ctaHref = "/appointment/", onCtaClick }) 
           <a
             href={ctaHref}
             onClick={onCtaClick}
-            className="inline-flex items-center justify-center rounded-xl bg-red-400 px-8 py-4 text-base font-extrabold uppercase tracking-wide text-black shadow-sm transition hover:brightness-110 active:scale-[0.99]"
+            className="inline-flex items-center justify-center rounded-xl bg-[#67c2d5] px-8 py-4 text-base font-extrabold uppercase tracking-wide text-black shadow-sm transition hover:brightness-110 active:scale-[0.99]"
           >
             Join Now
           </a>
@@ -85,7 +83,7 @@ export default memo(ReadyToStart);
 function UnderlineDots({ className = "" }) {
   return (
     <svg
-      className={`h-3 w-44 text-red-400 ${className}`}
+      className={`h-3 w-44 text-[#67c2d5] ${className}`}
       viewBox="0 0 176 12"
       fill="currentColor"
       aria-hidden="true"
@@ -107,7 +105,12 @@ function DotsTopRight() {
     >
       {Array.from({ length: 10 }).map((_, row) =>
         Array.from({ length: 10 }).map((__, col) => (
-          <circle key={`${row}-${col}`} cx={col * 12 + 6} cy={row * 12 + 6} r="3" />
+          <circle
+            key={`${row}-${col}`}
+            cx={col * 12 + 6}
+            cy={row * 12 + 6}
+            r="3"
+          />
         ))
       )}
     </svg>
