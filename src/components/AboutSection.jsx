@@ -6,7 +6,7 @@ IntroSection = () => {
     <section className="bg-white px-6 py-12 lg:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Side: Images */}
-        <div className="relative w-110 h-full bg-red-400">
+        <div className="relative w-110 h-full bg-[#67c2d5]">
           {/* Top-left image */}
           <img
             src="/photo-1.jpg"
@@ -42,14 +42,14 @@ IntroSection = () => {
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-black leading-tight mb-4">
             WHO’S THIS GUY? <br />
-            <span className="text-red-500 inline-block mt-2">I’M TOM</span>
+            <span className="text-[#67c2d5] inline-block mt-2">I’M TOM</span>
           </h2>
 
           <p className="text-gray-700 mb-6 max-w-lg mx-auto lg:mx-0">
             I help people ditch the extra fat, pack on muscle, and feel like the upgraded version of themselves. Fitness doesn’t have to be boring or intimidating — I’ll show you how to enjoy the process, push your limits, and actually have fun while getting results.
           </p>
 
-          <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 font-bold rounded transition">
+          <button className="bg-[#67c2d5] hover:bg-black text-white px-6 py-3 font-bold rounded transition">
             LEARN MORE
           </button>
         </div>

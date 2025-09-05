@@ -9,3 +9,22 @@ html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; /* Your theme color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4ca7bb; /* Darker on hover */
+}

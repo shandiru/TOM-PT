@@ -32,7 +32,7 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-red-400 p-6 shadow-lg rounded-lg hover:shadow-xl transition duration-300"
+              className="bg-[#67c2d5] p-6 shadow-lg rounded-lg hover:shadow-xl transition duration-300"
             >
               <h3 className="text-xl font-semibold text-black mb-4">{benefit.title}</h3>
               <p className="text-gray-800">{benefit.description}</p>

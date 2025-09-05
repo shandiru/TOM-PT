@@ -118,7 +118,7 @@ export default function RealResultsSection() {
               key={item.id}
               className="snap-center shrink-0 basis-[85%] sm:basis-[60%] md:basis-[48%] lg:basis-[460px]"
             >
-              <div className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm h-190">
+              <div className="rounded-2xl border border-gray-100 bg-[#67c2d5] p-4 shadow-sm h-190">
                 {/* Before/After slider */}
                 <div
                   ref={setContainerRef(item.id)}
@@ -207,7 +207,7 @@ export default function RealResultsSection() {
         <button
           type="button"
           onClick={() => scrollByCard(-1)}
-          className="absolute -left-10 top-1/2 z-10 -translate-y-1/2 inline-flex items-center justify-center rounded-full border bg-white p-2 shadow hover:bg-gray-50"
+          className="absolute -left-10 top-1/2 z-10 hover:bg-[#67c2d5] -translate-y-1/2 inline-flex items-center justify-center rounded-full border p-2 shadow hover:bg-gray-50"
           aria-label="Previous"
         >
           ‹

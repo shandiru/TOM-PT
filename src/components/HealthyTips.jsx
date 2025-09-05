@@ -11,7 +11,7 @@ const options = [
     description:
       "High-fat, low-carb eating strategy designed to shift the body into ketosis",
     icon: GiAvocado,
-    bg: "bg-green-400 text-green-800",
+    bg: "bg-green-500 text-black",
     benefits: [
       "Ketosis = using fat (ketones) as the primary energy source instead of glucose",
       "Stabilizes blood sugar levels → fewer energy crashes throughout the day",
@@ -37,7 +37,7 @@ const options = [
     description:
       "Macronutrients = Protein, Carbs, Fat → foundation of nutrition",
     icon: FaChartBar,
-    bg: "bg-blue-400 text-blue-800",
+    bg: "bg-blue-900 text-black",
     benefits: [
       "Protein = muscle repair & satiety; Carbs = fuel; Fat = hormones & brain health",
       `Counting macros = precision nutrition without obsessing over "clean" foods`,
@@ -94,7 +94,7 @@ export default function FitnessGuide() {
   const [selected, setSelected] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center px-4 py-10">
+    <div className="min-h-screen bg-white flex flex-col items-center px-4 py-10">
       {/* Header */}
       <div className="text-center max-w-2xl mb-10">
         <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
@@ -120,8 +120,8 @@ export default function FitnessGuide() {
                 onClick={() => setSelected(opt)}
                 className={`flex items-start gap-4 p-12 rounded-xl border-2 border-gray-200 shadow-lg cursor-pointer transition 
                   ${selected?.id === opt.id
-                    ? "border-blue-500 bg-blue-50"
-                    : "bg-white hover:shadow-md"
+                    ? "border-blue-500 bg-white"
+                    : "bg-[#67c2d5] hover:shadow-md"
                   }`}
               >
                 {/* Icon wrapper with custom bg */}
@@ -145,7 +145,7 @@ export default function FitnessGuide() {
 
         {/* Right: Details Panel */}
         <div
-          className={`flex items-center justify-center border-2 border-gray-300 rounded-xl bg-white shadow-lg text-left transition-all duration-500 ease-in-out overflow-hidden
+          className={`flex items-center justify-center border-2 border-gray-300 rounded-xl bg-[#67c2d5] shadow-lg text-left transition-all duration-500 ease-in-out overflow-hidden
           ${selected ? "p-6 min-h-[35rem]" : "h-60"} w-180`}
         >
           {selected ? (
@@ -182,12 +182,16 @@ export default function FitnessGuide() {
               </ul>
 
               {/* Close button */}
-              <button
-                onClick={() => setSelected(null)}
-                className="mt-5 w-full bg-gray-100 text-gray-800 py-2 rounded-md font-medium hover:bg-gray-200 transition"
-              >
-                Close Details
-              </button>
+              {/* Close button */}
+              <div className="flex justify-center mt-3">
+                <button
+                  onClick={() => setSelected(null)}
+                  className="mt-5 bg-gray-100 text-gray-800 py-2 px-7 rounded-md font-medium hover:bg-black hover:text-white transition"
+                >
+                  Close Details
+                </button>
+              </div>
+
             </div>
           ) : (
             <div className="text-gray-500 text-center transition-opacity duration-500">
